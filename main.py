@@ -9,6 +9,13 @@ class Ship(pygame.sprite.Sprite):
         self.image = pygame.image.load('graphics/ship.png').convert_alpha()  # has to be image
         self.rect = self.image.get_rect(center=(WINDOWS_WIDTH/2, WINDOWS_HEIGHT/2)) # has to be rect
 
+        self.audio = pygame.mixer.Sound('sounds/laser.ogg')
+        self.audio.set_volume(0.1)
+
+        # add a mask
+        self.mask = pygame.mask.from_surface(self.image)  # has to be mask
+
+
         # timer
         self.can_shoot = True
         self.shoot_time = None
@@ -27,11 +34,12 @@ class Ship(pygame.sprite.Sprite):
         if pygame.mouse.get_pressed()[0] and self.can_shoot:
             self.can_shoot = False
             self.shoot_time = pygame.time.get_ticks()
+            self.audio.play()
 
             Laser(self.rect.midtop, laser_group)
 
     def meteor_collisions(self):
-        if pygame.sprite.spritecollide(self, meteor_group, False):
+        if pygame.sprite.spritecollide(self, meteor_group, False, pygame.sprite.collide_mask):
             pygame.quit()
             sys.exit()
 
@@ -47,6 +55,10 @@ class Laser(pygame.sprite.Sprite):
         super().__init__(groups)
         self.image = pygame.image.load('graphics/laser.png').convert_alpha()
         self.rect = self.image.get_rect(midbottom=pos)
+        self.mask = pygame.mask.from_surface(self.image)
+
+        self.audio = pygame.mixer.Sound('sounds/explosion.wav')
+        self.audio.set_volume(0.1)
 
         # float based postition
         self.pos = pygame.math.Vector2(self.rect.topleft)
@@ -54,7 +66,8 @@ class Laser(pygame.sprite.Sprite):
         self.speed = 600
 
     def meteor_collision(self):
-        if pygame.sprite.spritecollide(self, meteor_group, True):
+        if pygame.sprite.spritecollide(self, meteor_group, True, pygame.sprite.collide_mask):
+            self.audio.play()
             self.kill()
 
     def update(self):
@@ -77,6 +90,8 @@ class Meteor(pygame.sprite.Sprite):
         self.scaled_surf = pygame.transform.scale(meteor_surf, meteor_size)
         self.image = self.scaled_surf
         self.rect = self.image.get_rect(center=pos)
+        self.mask = pygame.mask.from_surface(self.image)
+
 
         # float based positioning
         self.pos = pygame.math.Vector2(self.rect.topleft)
@@ -92,6 +107,7 @@ class Meteor(pygame.sprite.Sprite):
         rotated_surf = pygame.transform.rotozoom(self.scaled_surf, self.rotation, 1)
         self.image = rotated_surf
         self.rect = self.image.get_rect(center=self.rect.center)
+        self.mask = pygame.mask.from_surface(self.image)
 
     def update(self):
         self.pos += self.direction * self.speed * dt
@@ -121,6 +137,9 @@ clock = pygame.time.Clock()
 
 # background
 bg_surf = pygame.image.load('graphics/background.png').convert()
+bg_music = pygame.mixer.Sound('sounds/music.wav')
+bg_music.set_volume(0.05)
+bg_music.play(loops=-1)
 
 # sprite groups
 spaceship_group = pygame.sprite.GroupSingle()
