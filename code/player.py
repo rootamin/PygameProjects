@@ -20,7 +20,7 @@ class Player(pygame.sprite.Sprite):
 
     def import_assets(self):
         self.animations = {}
-        for index, folder in enumerate(walk('C:/Users/Mohammad Amin Osali/PycharmProjects/PygameProjects/graphics/player')):
+        for index, folder in enumerate(walk('graphics/player')):
             if index == 0:
                 for name in folder[1]:
                     self.animations[name] = []

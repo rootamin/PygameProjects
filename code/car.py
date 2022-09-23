@@ -6,10 +6,10 @@ class Car(pygame.sprite.Sprite):
     def __init__(self, pos, groups):
         super().__init__(groups)
 
-        for _, _, img_list in walk("C:/Users/Mohammad Amin Osali/PycharmProjects/PygameProjects/graphics/cars"):
+        for _, _, img_list in walk("graphics/cars"):
             car_name = choice(img_list)
 
-        self.image = pygame.image.load("C:/Users/Mohammad Amin Osali/PycharmProjects/PygameProjects/graphics/cars/" + car_name).convert_alpha()
+        self.image = pygame.image.load("graphics/cars/" + car_name).convert_alpha()
         self.rect = self.image.get_rect(center=pos)
 
         # float based movements
@@ -22,7 +22,7 @@ class Car(pygame.sprite.Sprite):
             self.image = pygame.transform.flip(self.image, True, False)
 
 
-        self.speed = 300
+        self.speed = 0
 
     def update(self, dt):
         self.pos += self.direction * self.speed * dt
