@@ -35,27 +35,37 @@ clock = pygame.time.Clock()
 
 # groups
 all_sprites = AllSprites()
+obstacle_sprites = pygame.sprite.Group()
 
 # sprites
-player = Player((2062, 3274), all_sprites)
+player = Player((2062, 3274), all_sprites, obstacle_sprites)
 
 # timer
 car_timer = pygame.event.custom_type()
 pygame.time.set_timer(car_timer, 50)
 pos_list = []
 
+# font
+font = pygame.font.Font(None, 50)
+text_surface = font.render('Victory!', True, 'White')
+text_rect = text_surface.get_rect(center=(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2))
+
+music = pygame.mixer.Sound('audio/music.mp3')
+music.set_volume(0.1)
+music.play(loops=-1)
+
 # sprite setup
 for file_name, pos_list in SIMPLE_OBJECTS.items():
     path = f'graphics/objects/simple/{file_name}.png'
     surf = pygame.image.load(path).convert_alpha()
     for pos in pos_list:
-        SimpleSprite(surf, pos, all_sprites)
+        SimpleSprite(surf, pos, [all_sprites, obstacle_sprites])
 
 for file_name, pos_list in LONG_OBJECTS.items():
     path = f'graphics/objects/long/{file_name}.png'
     surf = pygame.image.load(path).convert_alpha()
     for pos in pos_list:
-        LongSprite(surf, pos, all_sprites)
+        LongSprite(surf, pos, [all_sprites, obstacle_sprites])
 
 # game loop
 while True:
@@ -70,7 +80,7 @@ while True:
             if random_pos not in pos_list:  # this is gonna prevent if the cars are spawning on top of each other
                 pos_list.append(random_pos)
                 pos = (random_pos[0], random_pos[1] + randint(-8, 8))
-                Car(pos, all_sprites)  # we implemented before if the car spawns on the right side of the map it should turn negative dir and flip the image
+                Car(pos, [all_sprites, obstacle_sprites])  # we implemented before if the car spawns on the right side of the map it should turn negative dir and flip the image
             if len(pos_list) > 5:
                 del pos_list[0]
 
@@ -80,12 +90,17 @@ while True:
     # draw a bg
     display_surface.fill('black')
 
-    # update
-    all_sprites.update(dt)
+    if player.pos.y >= 1180:  # for the victory
 
-    # draw
-    # all_sprites.draw(display_surface)
-    all_sprites.customize_draw()
+        # update
+        all_sprites.update(dt)
+
+        # draw
+        all_sprites.customize_draw()
+
+    else:
+        display_surface.fill('teal')
+        display_surface.blit(text_surface, text_rect)
 
     # update the display surface => draw the frame
     pygame.display.update()

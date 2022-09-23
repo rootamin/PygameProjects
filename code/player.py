@@ -1,8 +1,8 @@
-import pygame
+import pygame, sys
 from os import walk
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos, groups):
+    def __init__(self, pos, groups, collision_sprites):
         super().__init__(groups)
 
         # image
@@ -18,6 +18,44 @@ class Player(pygame.sprite.Sprite):
         self.direction = pygame.math.Vector2()
         self.speed = 200
 
+        # collisions
+        self.collision_sprites = collision_sprites
+        self.hitbox = self.rect.inflate(0, -self.rect.height / 2)
+
+    def collision(self, direction):
+        if direction == 'horizontal':
+            # horizontal collisions
+            for sprite in self.collision_sprites.sprites():
+                if sprite.hitbox.colliderect(self.hitbox):
+                    if hasattr(sprite, 'name') and sprite.name == 'car':
+                        pygame.quit()
+                        sys.exit()
+
+                    if self.direction.x > 0: # moving right
+                        self.hitbox.right = sprite.hitbox.left
+                        self.rect.centerx = self.hitbox.centerx
+                        self.pos.x = self.hitbox.centerx
+                    if self.direction.x < 0: # moving left
+                        self.hitbox.left = sprite.hitbox.right
+                        self.rect.centerx = self.hitbox.centerx
+                        self.pos.x = self.hitbox.centerx
+        else:
+            for sprite in self.collision_sprites.sprites():
+                if sprite.hitbox.colliderect(self.hitbox):
+                    if hasattr(sprite, 'name') and sprite.name == 'car':
+                        pygame.quit()
+                        sys.exit()
+
+                    if self.direction.y > 0:  # moving down
+                        self.hitbox.bottom = sprite.hitbox.top
+                        self.rect.centery = self.hitbox.centery
+                        self.pos.y = self.hitbox.centery
+                    if self.direction.y < 0:  # moving up
+                        self.hitbox.top = sprite.hitbox.bottom
+                        self.rect.centery = self.hitbox.centery
+                        self.pos.y = self.hitbox.centery
+            # vertical collisions
+
     def import_assets(self):
         self.animations = {}
         for index, folder in enumerate(walk('graphics/player')):
@@ -32,12 +70,22 @@ class Player(pygame.sprite.Sprite):
                     self.animations[key].append(surf)
 
     def move(self, dt):
-        #normalize a vector -> the length of the vector is ging to be 1
+        #normalize a vector -> the length of the vector is going to be 1
         if self.direction.magnitude() != 0:
             self.direction = self.direction.normalize()
 
-        self.pos += self.direction * self.speed * dt
-        self.rect.center = round(self.pos.x), round(self.pos.y)
+        # horizontal movement + collision
+        self.pos.x += self.direction.x * self.speed * dt
+        self.hitbox.centerx = round(self.pos.x)
+        self.rect.centerx = self.hitbox.centerx
+        self.collision('horizontal')
+
+        # vertical movement + collision
+        self.pos.y += self.direction.y * self.speed * dt
+        self.hitbox.centery = round(self.pos.y)
+        self.rect.centery = self.hitbox.centery
+        self.collision('vertical')
+        # vertical collisions
 
     def input(self):
         keys = pygame.key.get_pressed()
@@ -73,7 +121,24 @@ class Player(pygame.sprite.Sprite):
             self.frame_index = 0
         self.image = current_animation[int(self.frame_index)]
 
+    def restrict(self):
+        if self.rect.left < 640:
+            self.pos.x = 640 + self.rect.width / 2 # for getting the center of the player
+            self.hitbox.left = 640
+            self.rect.left = 640
+
+        if self.rect.right > 2560:
+            self.pos.x = 2560 - self.rect.width / 2  # for getting the center of the player
+            self.hitbox.right = 2560
+            self.rect.right = 2560
+
+        if self.rect.bottom > 3500:
+            self.pos.y = 3500 - self.rect.height / 2  # for getting the center of the player
+            self.rect.bottom = 3500
+            self.hitbox.centery = self.rect.centery # because the hitbox rectangle is smaller than the originial one
+
     def update(self, dt):
         self.input()
         self.move(dt)
         self.animate(dt)
+        self.restrict()
