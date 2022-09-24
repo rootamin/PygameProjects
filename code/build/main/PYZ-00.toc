@@ -1,0 +1,794 @@
+('C:\\Users\\Mohammad Amin '
+ 'Osali\\PycharmProjects\\PygameProjects\\code\\build\\main\\PYZ-00.pyz',
+ [('pkgutil',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pkgutil.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\zipimport.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\typing.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\string.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\copy.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\base64.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\getopt.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\gettext.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\struct.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\calendar.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\argparse.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\shutil.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\gzip.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_compression.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\lzma.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\bz2.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\datetime.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\socket.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\selectors.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\quopri.py',
+   'PYMODULE'),
+  ('uu',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\uu.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\optparse.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\csv.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\threading.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\inspect.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\dis.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\opcode.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\ast.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._common',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\_common.py',
+   'PYMODULE'),
+  ('importlib._adapters',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\_adapters.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('pkg_resources',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.zipp',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\zipp.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.util',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\util.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.unicode',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\unicode.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.testing',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\testing.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.results',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\results.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pprint.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\dataclasses.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.helpers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\helpers.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\html\\entities.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.exceptions',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\exceptions.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.core',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\core.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.diagram',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\diagram\\__init__.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pdb.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pydoc.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\webbrowser.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\ssl.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\tty.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\runpy.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\shlex.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\signal.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\glob.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\code.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\codeop.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\__future__.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\bdb.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\cmd.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.common',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\common.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing.actions',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\actions.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.tags',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\pickle.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._musllinux',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._manylinux',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.more_itertools.recipes',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\recipes.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.more_itertools.more',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\more.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\queue.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.more_itertools',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco.text',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\text\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\importlib\\resources.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco.functools',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\functools.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco.context',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\context.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources.simple',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\simple.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources.readers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\readers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources.abc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\abc.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._legacy',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_legacy.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._itertools',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_itertools.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._compat',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_compat.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._common',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_common.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._adapters',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_adapters.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.appdirs',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_bootsubprocess',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_bootsubprocess.py',
+   'PYMODULE'),
+  ('pkg_resources.extern',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pkg_resources\\extern\\__init__.py',
+   'PYMODULE'),
+  ('imp',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\imp.py',
+   'PYMODULE'),
+  ('plistlib',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\plistlib.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\platform.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\netrc.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\bisect.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('sprite',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\PycharmProjects\\PygameProjects\\code\\sprite.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\random.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\statistics.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\contextvars.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\fractions.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\numbers.py',
+   'PYMODULE'),
+  ('car',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\PycharmProjects\\PygameProjects\\code\\car.py',
+   'PYMODULE'),
+  ('player',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\PycharmProjects\\PygameProjects\\code\\player.py',
+   'PYMODULE'),
+  ('settings',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\PycharmProjects\\PygameProjects\\code\\settings.py',
+   'PYMODULE'),
+  ('pygame',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\__init__.py',
+   'PYMODULE'),
+  ('pygame.colordict',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\colordict.py',
+   'PYMODULE'),
+  ('pygame.macosx',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\macosx.py',
+   'PYMODULE'),
+  ('pygame.pkgdata',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\pkgdata.py',
+   'PYMODULE'),
+  ('pygame.fastevent',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\fastevent.py',
+   'PYMODULE'),
+  ('pygame.sndarray',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\sndarray.py',
+   'PYMODULE'),
+  ('pygame.surfarray',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\surfarray.py',
+   'PYMODULE'),
+  ('pygame.sysfont',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\sysfont.py',
+   'PYMODULE'),
+  ('pygame.ftfont',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\ftfont.py',
+   'PYMODULE'),
+  ('pygame.threads',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\threads\\__init__.py',
+   'PYMODULE'),
+  ('pygame.sprite',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\sprite.py',
+   'PYMODULE'),
+  ('pygame.cursors',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\cursors.py',
+   'PYMODULE'),
+  ('pygame.version',
+   'C:\\Users\\Mohammad Amin '
+   'Osali\\anaconda3\\envs\\PygameProjects\\lib\\site-packages\\pygame\\version.py',
+   'PYMODULE')])
