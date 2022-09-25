@@ -131,7 +131,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="3" name="Object">
+ <objectgroup id="3" name="Objects">
   <object id="121" gid="393" x="840" y="994.67" width="576" height="600"/>
   <object id="122" gid="401" x="2544.55" y="2490.85" width="800" height="628"/>
   <object id="123" gid="402" x="1480" y="1110" width="384" height="484"/>

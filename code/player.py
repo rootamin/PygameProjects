@@ -105,6 +105,9 @@ class Player(pygame.sprite.Sprite):
 
         self.image = current_animation[int(self.frame_index)]
 
+    def collision(self, direction):
+
+
     def update(self, dt):
         self.input()
         self.get_status()
