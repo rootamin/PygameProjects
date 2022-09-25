@@ -108,7 +108,6 @@ class Cactus(Entity, Monster):
             self.attacking = True
             self.frame_index = 0
             self.bullet_shot = False
-            self.shoot_sound.play()
 
         if self.attacking:
             self.status = self.status.split('_')[0] + '_attack'
@@ -120,6 +119,7 @@ class Cactus(Entity, Monster):
             direction = self.get_player_distance_direction()[1]
             pos = self.rect.center + direction * 150
             self.create_bullet(pos, direction)
+            self.shoot_sound.play()
             self.bullet_shot = True
 
         self.frame_index += 7 * dt
