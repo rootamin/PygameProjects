@@ -3,7 +3,8 @@ from pygame.math import Vector2 as vector
 from settings import *
 from player import Player
 from pytmx.util_pygame import load_pygame
-from sprite import Sprite
+from sprite import Sprite, Bullet
+from monster import Coffin, Cactus
 
 class AllSprites(pygame.sprite.Group):
     def __init__(self):
@@ -30,14 +31,42 @@ class Game:
         self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
         pygame.display.set_caption('Western Shooter')
         self.clock = pygame.time.Clock()
+        self.bullet_surf = pygame.image.load('graphics/other/particle.png').convert_alpha()
 
         # groups
         self.all_sprites = AllSprites()
         self.obstacles = pygame.sprite.Group()
+        self.bullets = pygame.sprite.Group()
+        self.monsters = pygame.sprite.Group()
 
         self.setup()
+        self.music = pygame.mixer.Sound('sound/music.mp3')
+        self.music.set_volume(0.4)
+        self.music.play(loops=-1)
 
-    def setup(self):        # importing from tiles
+    def create_bullet(self, pos, direction):
+        Bullet(pos, direction, self.bullet_surf, [self.all_sprites, self.bullets])
+
+    def bullet_collision(self):
+
+        # bullet obstacle collision
+        for obstacle in self.obstacles.sprites():
+            pygame.sprite.spritecollide(obstacle, self.bullets, True, pygame.sprite.collide_mask)
+
+        # bullet monster collision
+        for bullet in self.bullets.sprites():
+            sprites = pygame.sprite.spritecollide(bullet, self.monsters, False, pygame.sprite.collide_mask)
+
+            if sprites:
+                bullet.kill()
+                for sprite in sprites:
+                    sprite.damage()
+
+        # player bullet collision
+        if pygame.sprite.spritecollide(self.player, self.bullets, True, pygame.sprite.collide_mask):
+            self.player.damage()
+
+    def setup(self): # importing from tiles
         tmx_map = load_pygame('data/map.tmx')
 
         # tiles
@@ -50,7 +79,19 @@ class Game:
 
         for obj in tmx_map.get_layer_by_name('Entities'):
             if obj.name == 'Player':
-                self.player = Player((obj.x, obj.y), self.all_sprites, PATHS['player'], self.obstacles)  # player itself is not in the obstacle sprites group
+                self.player = Player(
+                    pos=(obj.x, obj.y),
+                    groups=self.all_sprites,
+                    path=PATHS['player'],
+                    collision_sprites=self.obstacles,
+                    create_bullet=self.create_bullet
+                )  # player itself is not in the obstacle sprites group
+
+            if obj.name == 'Coffin':
+                Coffin((obj.x, obj.y), [self.all_sprites, self.monsters], PATHS['coffin'], self.obstacles, self.player)
+
+            if obj.name == 'Cactus':
+                Cactus((obj.x, obj.y), [self.all_sprites, self.monsters], PATHS['cactus'], self.obstacles, self.player, self.create_bullet)
 
     def run(self):
         while True:
@@ -62,6 +103,7 @@ class Game:
 
             # update groups
             self.all_sprites.update(dt)
+            self.bullet_collision()
 
             # draw groups
             self.display_surface.fill('black')
