@@ -86,6 +86,7 @@ class Meteor(pygame.sprite.Sprite):
         super().__init__(groups)
         # randomizing the meteor size
         meteor_surf = pygame.image.load('graphics/meteor.png').convert_alpha()
+        meteor_surf = pygame.transform.scale(meteor_surf, (101, 84))
         meteor_size = pygame.math.Vector2(meteor_surf.get_size()) * uniform(0.5, 1.5) # 101x84 original
         self.scaled_surf = pygame.transform.scale(meteor_surf, meteor_size)
         self.image = self.scaled_surf
