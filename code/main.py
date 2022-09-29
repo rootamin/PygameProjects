@@ -5,6 +5,7 @@ from tile import Tile, CollisionTile, MovingPlatform
 from player import Player
 from pygame.math import Vector2 as vector
 from bullet import Bullet, FireAnimation
+from enemy import Enemy
 
 class AllSprites(pygame.sprite.Group):
     def __init__(self):
@@ -72,6 +73,8 @@ class Main:
         for obj in tmx_map.get_layer_by_name('Entities'):
             if obj.name == 'Player':
                 self.player = Player((obj.x, obj.y), self.all_sprites, '../graphics/player', self.collision_sprites, self.shoot)
+            if obj.name == "Enemy":
+                Enemy((obj.x, obj.y), '../graphics/enemies/standard', self.all_sprites, self.shoot, self.player, self.collision_sprites)
 
         self.platform_border_rects = []
         for obj in tmx_map.get_layer_by_name('Platforms'):
