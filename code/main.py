@@ -60,6 +60,14 @@ class Main:
         self.bullet_surf = pygame.image.load('../graphics/bullet.png').convert_alpha()
         self.fire_surfs = [pygame.image.load('../graphics/fire/0.png').convert_alpha(), pygame.image.load('../graphics/fire/1.png').convert_alpha()]
 
+        # music
+        self.music = pygame.mixer.Sound('../audio/music.wav')
+        self.music.set_volume(0.1)
+        self.music.play(-1)
+
+        self.shoot_sound = pygame.mixer.Sound('../audio/bullet.wav')
+        self.shoot_sound.set_volume(0.1)
+
     def setup(self): # we call it under init
         tmx_map = load_pygame('../data/map.tmx')
 
@@ -108,6 +116,7 @@ class Main:
 
         Bullet(pos, self.bullet_surf, direction, [self.all_sprites, self.bullet_sprites])
         FireAnimation(entity, self.fire_surfs, direction, self.all_sprites)
+        # self.shoot_sound.play() we can trigger it globally in here when each bullet spawns if we are using the same shoot sound
 
     def bullet_collision(self):
         # obstacles
