@@ -6,6 +6,7 @@ from player import Player
 from pygame.math import Vector2 as vector
 from bullet import Bullet, FireAnimation
 from enemy import Enemy
+from overlay import Overlay
 
 class AllSprites(pygame.sprite.Group):
     def __init__(self):
@@ -50,8 +51,10 @@ class Main:
         self.collision_sprites = pygame.sprite.Group()
         self.platform_sprites = pygame.sprite.Group()
         self.bullet_sprites = pygame.sprite.Group()
+        self.vulnerable_sprites = pygame.sprite.Group()
 
         self.setup()
+        self.overlay = Overlay(self.player)
 
         # bullet images, we import these here insted of inside the loop for performance sakes(we dont want to load them on each loop)
         self.bullet_surf = pygame.image.load('../graphics/bullet.png').convert_alpha()
@@ -72,9 +75,9 @@ class Main:
         # objects
         for obj in tmx_map.get_layer_by_name('Entities'):
             if obj.name == 'Player':
-                self.player = Player((obj.x, obj.y), self.all_sprites, '../graphics/player', self.collision_sprites, self.shoot)
+                self.player = Player((obj.x, obj.y), [self.all_sprites, self.vulnerable_sprites], '../graphics/player', self.collision_sprites, self.shoot)
             if obj.name == "Enemy":
-                Enemy((obj.x, obj.y), '../graphics/enemies/standard', self.all_sprites, self.shoot, self.player, self.collision_sprites)
+                Enemy((obj.x, obj.y), '../graphics/enemies/standard', [self.all_sprites, self.vulnerable_sprites], self.shoot, self.player, self.collision_sprites)
 
         self.platform_border_rects = []
         for obj in tmx_map.get_layer_by_name('Platforms'):
@@ -112,6 +115,9 @@ class Main:
             pygame.sprite.spritecollide(obstacle, self.bullet_sprites, True)
 
         # entities
+        for sprite in self.vulnerable_sprites.sprites():
+            if pygame.sprite.spritecollide(sprite, self.bullet_sprites, True, pygame.sprite.collide_mask):
+                sprite.damage()
 
     def run(self):
         while True:
@@ -127,6 +133,7 @@ class Main:
             self.all_sprites.update(dt)
             self.bullet_collision()
             self.all_sprites.custom_draw(self.player)
+            self.overlay.display()
 
             pygame.display.update()
 

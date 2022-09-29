@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 from pygame.math import Vector2 as vector
 from entity import Entity
 
@@ -14,6 +14,8 @@ class Player(Entity):
         self.jump_speed = 1200
         self.on_floor = False
         self.moving_floor = None
+
+        self.health = 10
 
     def get_status(self):
         # idle
@@ -116,13 +118,26 @@ class Player(Entity):
         self.collision('vertical')
         self.moving_floor = None # this gonna make the hasattr in check_contant() gone and we would't stick to the platform while jumping when its moving down
 
+    def check_death(self):
+        if self.health <= 0:
+            pygame.quit()
+            sys.exit()
+
     def update(self, dt):
         self.old_rect = self.rect.copy() # 129 -> 5:00
         self.input()
         self.get_status()
         self.move(dt)
         self.check_contact()
+
         self.animate(dt)
+        self.blink()
 
         # timer
         self.shoot_timer()
+        self.invul_timer()
+
+        # death
+        self.check_death()
+
+        self.check_death()
