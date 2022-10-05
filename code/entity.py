@@ -33,9 +33,9 @@ class Entity(pygame.sprite.Sprite):
         self.hit_time = None
 
         # sound
-        self.hit_sound = pygame.mixer.Sound('sound/hit.mp3')
+        self.hit_sound = pygame.mixer.Sound('../sound/hit.mp3')
         self.hit_sound.set_volume(0.1)
-        self.shoot_sound = pygame.mixer.Sound('sound/bullet.wav')
+        self.shoot_sound = pygame.mixer.Sound('../sound/bullet.wav')
         self.shoot_sound.set_volume(0.2)
 
     def blink(self):
